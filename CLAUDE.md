@@ -24,7 +24,7 @@
 
 ### 自动 Git 提交
 
-每完成一篇笔记后自动 `git add -A && git commit`，commit message 格式：`<type>: <简短描述>`
+每完成一篇笔记后自动 `git add -A && git commit`，然后 `git push`。commit message 格式：`<type>: <简短描述>`
 
 - `init:` 初始化
 - `add:` 新增笔记
