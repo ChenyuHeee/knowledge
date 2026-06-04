@@ -1,6 +1,6 @@
 # 大模型拓扑结构：Layer / Tensor / Tile / Block / Checkpoint
 
-> 相关笔记：[FFN 详解](ffn.md)
+> 相关笔记：[FFN 详解](ffn.md) | [Transformer & Attention](transformer-attention.md)
 
 ## Layer（层）
 
