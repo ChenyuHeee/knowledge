@@ -1,5 +1,7 @@
 # cgroup 限制内存使用
 
+> 相关笔记：[NUMA、move_pages 与 numactl](numa-movepages-numactl.md)
+
 ## 概念
 
 cgroup（Control Group）是 Linux 内核的资源隔离机制。通过 cgroup v2 的 memory 控制器，可以用 `memory.max` 文件设置进程的硬内存上限，超出触发 OOM kill。
