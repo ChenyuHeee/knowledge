@@ -30,3 +30,9 @@
 |------|------|
 | [cgroup 限制内存](linux/cgroup-memory-limit.md) | cgroup v2 memory.max，限制进程内存使用 |
 | [NUMA & numactl](linux/numa-movepages-numactl.md) | NUMA 拓扑，move_pages，numactl 绑核绑内存 |
+
+## Python / Web
+
+| 笔记 | 说明 |
+|------|------|
+| [Uvicorn](python/uvicorn.md) | ASGI 服务器，ASGI vs WSGI，生产部署 |
