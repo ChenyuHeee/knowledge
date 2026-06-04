@@ -1,5 +1,7 @@
 # 大模型拓扑结构：Layer / Tensor / Tile / Block / Checkpoint
 
+> 相关笔记：[FFN 详解](ffn.md)
+
 ## Layer（层）
 
 模型的基本结构单元。Decoder-only Transformer 的每层包含：
