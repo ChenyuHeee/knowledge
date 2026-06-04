@@ -7,6 +7,25 @@
 - Attention：token 之间**横向交换信息**（「猫」看到「老鼠」）
 - FFN：每个 token **纵向深化理解**（消化聚合后的上下文，重新编码）
 
+## MLP 与 FFN 的关系
+
+**MLP（Multi-Layer Perceptron）** 是最基础的神经网络结构：多层全连接 + 非线性激活堆叠。
+
+万能近似定理：至少一层隐藏层 + 非线性激活 → 可以任意精度逼近任意连续函数。
+
+**FFN 就是 MLP 在 Transformer 语境下的特例**：
+
+```
+MLP（泛称，任意层数）              FFN（Transformer内，通常2层）
+  输入层                             输入 [d_model]
+    ↓ W1                               ↓ W1 [d_model → d_ff]
+  隐藏层 + ReLU                       隐藏层 + SwiGLU
+    ↓ W2                               ↓ W2 [d_ff → d_model]
+  输出层                             输出 [d_model]
+```
+
+日常交流中两者经常混用，说「Transformer 的 MLP 层」和「Transformer 的 FFN」是同一个东西。
+
 ## 结构
 
 两层的 MLP，先升维再降维：
