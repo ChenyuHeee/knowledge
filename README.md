@@ -28,6 +28,7 @@ tags: [索引]
 | 笔记 | 说明 |
 |------|------|
 | [RL 概述](ai-ml/rl/rl-intro.md) | 强化学习基本框架，Agent/Environment/Policy/Value，DQN/PPO，RLHF |
+| [MCTS + PRM](ai-ml/rl/mcts-prm.md) | 蒙特卡洛树搜索 + 过程奖励模型，o1/R1 推理架构 |
 
 ### 向量检索
 
