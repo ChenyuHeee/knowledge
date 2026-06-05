@@ -1,6 +1,6 @@
 # MLA（Multi-head Latent Attention，多头潜在注意力）
 
-> 相关笔记：[KV Head](kv-head.md) | [Transformer & Attention](transformer-attention.md)
+> 相关笔记：[KV Head](kv-head.md) | [Transformer & Attention](transformer-attention.md) | [KV Cache 压缩趋势](kv-cache-trend.md)
 
 DeepSeek-V2 (2024) 提出，通过低秩压缩进一步缩减 KV Cache。
 
