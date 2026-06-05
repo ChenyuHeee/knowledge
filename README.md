@@ -11,6 +11,7 @@
 | [Transformer & Attention](ai-ml/transformer/transformer-attention.md) | Attention 机制，Q/K/V，Multi-Head，Transformer 完整结构 |
 | [残差连接](ai-ml/transformer/residual-connection.md) | 梯度消失，残差直觉，Pre-Norm vs Post-Norm |
 | [大模型拓扑结构](ai-ml/transformer/llm-topology.md) | Layer / Tensor / Tile / Block / Checkpoint 层级解析 |
+| [KV Head](ai-ml/transformer/kv-head.md) | MHA / MQA / GQA，KV Cache 与推理显存优化 |
 
 阅读顺序：感知机 → FFN → Transformer & Attention → 残差连接 → 拓扑结构
 
