@@ -1,6 +1,6 @@
 # KV Cache 压缩趋势：MLA 之后
 
-> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [Transformer & Attention](transformer-attention.md)
+> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [Transformer & Attention](transformer-attention.md) | [RoPE](rope.md)
 
 ## 演进回顾
 
