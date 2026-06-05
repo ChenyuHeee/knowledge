@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [深度学习, FFN, MLP, Transformer]
+---
 # FFN（Feed-Forward Network，前馈网络）
 
 > 相关笔记：[大模型拓扑结构](llm-topology.md) | [感知机](perceptron.md)

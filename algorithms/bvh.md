@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [算法, BVH, 光线追踪, 空间数据结构]
+---
 # BVH（Bounding Volume Hierarchy，层次包围盒）
 
 ## 是什么

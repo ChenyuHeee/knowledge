@@ -1,3 +1,7 @@
+---
+date: 2026-06-03
+tags: [向量检索, IVF, PQ, ADC]
+---
 # IVF-PQ 深入
 
 > 前篇：[IVF-PQ 概述](ivf-pq.md)

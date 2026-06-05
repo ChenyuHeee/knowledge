@@ -1,3 +1,7 @@
+---
+date: 2026-06-04
+tags: [Linux, cgroup, 内存]
+---
 # cgroup 限制内存使用
 
 > 相关笔记：[NUMA、move_pages 与 numactl](numa-movepages-numactl.md)

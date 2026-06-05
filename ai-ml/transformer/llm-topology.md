@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [深度学习, LLM, 拓扑]
+---
 # 大模型拓扑结构：Layer / Tensor / Tile / Block / Checkpoint
 
 > 相关笔记：[FFN 详解](ffn.md) | [Transformer & Attention](transformer-attention.md) | [KV Head](kv-head.md)

@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [深度学习, RoPE, 位置编码]
+---
 # RoPE（Rotary Position Embedding，旋转位置编码）
 
 > 相关笔记：[Transformer & Attention](transformer-attention.md) | [KV Cache 压缩趋势](kv-cache-trend.md)

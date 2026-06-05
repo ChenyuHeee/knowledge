@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [深度学习, 残差连接, Transformer]
+---
 # 残差连接（Residual Connection）
 
 > 相关笔记：[Transformer & Attention](transformer-attention.md) | [大模型拓扑结构](llm-topology.md)

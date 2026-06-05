@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [深度学习, MLA, KV Cache, DeepSeek]
+---
 # MLA（Multi-head Latent Attention，多头潜在注意力）
 
 > 相关笔记：[KV Head](kv-head.md) | [Transformer & Attention](transformer-attention.md) | [KV Cache 压缩趋势](kv-cache-trend.md)

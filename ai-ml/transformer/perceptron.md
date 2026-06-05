@@ -1,3 +1,7 @@
+---
+date: 2026-06-05
+tags: [深度学习, 感知机, 神经网络]
+---
 # 感知机（Perceptron）
 
 > 相关笔记：[FFN / MLP](ffn.md) | [大模型拓扑结构](llm-topology.md)

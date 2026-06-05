@@ -1,3 +1,7 @@
+---
+date: 2026-06-04
+tags: [Linux, NUMA, numactl]
+---
 # NUMA、move_pages 与 numactl
 
 ## NUMA 概念
