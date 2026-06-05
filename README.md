@@ -23,6 +23,12 @@ tags: [索引]
 
 阅读顺序：感知机 → FFN → Transformer & Attention → 残差连接 → 拓扑结构
 
+### 强化学习
+
+| 笔记 | 说明 |
+|------|------|
+| [RL 概述](ai-ml/rl/rl-intro.md) | 强化学习基本框架，Agent/Environment/Policy/Value，DQN/PPO，RLHF |
+
 ### 向量检索
 
 | 笔记 | 说明 |
