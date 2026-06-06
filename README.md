@@ -7,6 +7,12 @@ tags: [索引]
 
 ## AI / ML
 
+### LLM 工具与协议
+
+| 笔记 | 说明 |
+|------|------|
+| [MCP](ai-ml/mcp.md) | Model Context Protocol，LLM 连接外部工具的标准协议 |
+
 ### Transformer 与深度学习
 
 | 笔记 | 说明 |
