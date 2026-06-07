@@ -3,7 +3,7 @@ date: 2026-06-07
 tags: [扩散模型, 视频生成, Attention, 高速运动]
 ---
 
-> 相关笔记：[Transformer & Attention](../transformer/transformer-attention.md) | [Softmax](../transformer/softmax.md) | [定位关键 Token](key-token-detection.md)
+> 相关笔记：[Transformer & Attention](../transformer/transformer-attention.md) | [Softmax](../transformer/softmax.md) | [定位关键 Token](key-token-detection.md) | [流式视频](streaming-video.md)
 
 # 高速运动视频生成中的 Attention 失效与解决
 

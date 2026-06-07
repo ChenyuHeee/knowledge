@@ -47,6 +47,7 @@ tags: [索引]
 |------|------|
 | [高速运动视频 Attention](ai-ml/diffusion/motion-video-attention.md) | 高速运动下 Attention 失效分析，Softmax 稀释，多步去噪 + 强化 Attention |
 | [定位关键 Token](ai-ml/diffusion/key-token-detection.md) | 四种定位方法：光流、Attention 熵、Token Loss、跨帧匹配 |
+| [流式视频](ai-ml/diffusion/streaming-video.md) | 流式视频生成，长程 Attention 衰减，与 KV Cache 的同一性 |
 
 ### 向量检索
 
