@@ -4,7 +4,7 @@ tags: [深度学习, Transformer, Attention]
 ---
 # Transformer & Attention 详解
 
-> 相关笔记：[感知机](perceptron.md) | [FFN / MLP](ffn.md) | [大模型拓扑结构](llm-topology.md) | [残差连接](residual-connection.md) | [KV Head](kv-head.md) | [RoPE](rope.md)
+> 相关笔记：[感知机](perceptron.md) | [FFN / MLP](ffn.md) | [大模型拓扑结构](llm-topology.md) | [残差连接](residual-connection.md) | [KV Head](kv-head.md) | [RoPE](rope.md) | [Softmax](softmax.md)
 
 ## Attention：让 token 互相看见
 

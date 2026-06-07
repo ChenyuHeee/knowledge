@@ -3,6 +3,8 @@ date: 2026-06-07
 tags: [扩散模型, 视频生成, Attention, 高速运动]
 ---
 
+> 相关笔记：[Transformer & Attention](../transformer/transformer-attention.md) | [Softmax](../transformer/softmax.md)
+
 # 高速运动视频生成中的 Attention 失效与解决
 
 ## 背景：扩散模型生成视频

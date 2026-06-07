@@ -25,6 +25,7 @@ tags: [索引]
 | [KV Head](ai-ml/transformer/kv-head.md) | MHA / MQA / GQA，KV Cache 与推理显存优化 |
 | [MLA](ai-ml/transformer/mla.md) | 多头潜在注意力，低秩 KV 压缩，DeepSeek-V2 |
 | [RoPE](ai-ml/transformer/rope.md) | 旋转位置编码，相对位置隐含在 Q/K 旋转中 |
+| [Softmax](ai-ml/transformer/softmax.md) | 指数归一化，温度系数，注意力预算与稀释的数学根源 |
 | [KV Cache 压缩趋势](ai-ml/transformer/kv-cache-trend.md) | MLA 之后：非对称量化、Token 剪枝、RoPE 适配 |
 
 阅读顺序：感知机 → FFN → Transformer & Attention → 残差连接 → 拓扑结构
