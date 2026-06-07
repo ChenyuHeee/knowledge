@@ -3,6 +3,8 @@ date: 2026-06-07
 tags: [扩散模型, 视频生成, 流式生成, 长序列]
 ---
 
+> 相关笔记：[Time Chunk](time-chunk.md)
+
 # 流式视频（Streaming Video）
 
 > 相关笔记：[高速运动视频 Attention](motion-video-attention.md) | [KV Cache 压缩趋势](../transformer/kv-cache-trend.md)
