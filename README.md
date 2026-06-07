@@ -27,6 +27,7 @@ tags: [索引]
 | [RoPE](ai-ml/transformer/rope.md) | 旋转位置编码，相对位置隐含在 Q/K 旋转中 |
 | [Softmax](ai-ml/transformer/softmax.md) | 指数归一化，温度系数，注意力预算与稀释的数学根源 |
 | [KV Cache 压缩趋势](ai-ml/transformer/kv-cache-trend.md) | MLA 之后：非对称量化、Token 剪枝、RoPE 适配 |
+| [Speculative Decoding](ai-ml/transformer/speculative-decoding.md) | 推测解码，小模型草稿 + 大模型验证，推理加速 |
 
 阅读顺序：感知机 → FFN → Transformer & Attention → 残差连接 → 拓扑结构
 

@@ -4,7 +4,7 @@ tags: [深度学习, KV Cache, 趋势]
 ---
 # KV Cache 压缩趋势：MLA 之后
 
-> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [Transformer & Attention](transformer-attention.md) | [RoPE](rope.md)
+> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [Transformer & Attention](transformer-attention.md) | [RoPE](rope.md) | [Speculative Decoding](speculative-decoding.md)
 
 ## 演进回顾
 
