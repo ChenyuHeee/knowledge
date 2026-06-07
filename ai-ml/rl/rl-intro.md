@@ -3,7 +3,7 @@ date: 2026-06-05
 tags: [强化学习, RL, 机器学习]
 ---
 
-> 相关笔记：[MCTS + PRM](mcts-prm.md)
+> 相关笔记：[MCTS + PRM](mcts-prm.md) | [OPD](opd.md) | [自蒸馏 vs RL](self-distillation-vs-rl.md)
 
 # RL（Reinforcement Learning，强化学习）
 

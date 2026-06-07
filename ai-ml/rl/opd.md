@@ -5,7 +5,7 @@ tags: [强化学习, 知识蒸馏, OPD, DeepSeek-R1]
 
 # OPD（On-Policy Distillation，同策略蒸馏）
 
-> 相关笔记：[RL 概述](rl-intro.md) | [MCTS + PRM](mcts-prm.md)
+> 相关笔记：[RL 概述](rl-intro.md) | [MCTS + PRM](mcts-prm.md) | [自蒸馏 vs RL](self-distillation-vs-rl.md)
 
 DeepSeek-R1 训练流程的关键步骤。Student 用自己的策略生成回答，Teacher 纠正，Student 从自己的错误中学习。
 

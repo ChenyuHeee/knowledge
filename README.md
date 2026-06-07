@@ -35,6 +35,8 @@ tags: [索引]
 |------|------|
 | [RL 概述](ai-ml/rl/rl-intro.md) | 强化学习基本框架，Agent/Environment/Policy/Value，DQN/PPO，RLHF |
 | [MCTS + PRM](ai-ml/rl/mcts-prm.md) | 蒙特卡洛树搜索 + 过程奖励模型，o1/R1 推理架构 |
+| [OPD](ai-ml/rl/opd.md) | 同策略蒸馏，与传统指示蒸馏的对比，DeepSeek-R1 训练 |
+| [自蒸馏 vs RL](ai-ml/rl/self-distillation-vs-rl.md) | 强化学习与自蒸馏的关系、区别、交替使用 |
 
 ### 向量检索
 
