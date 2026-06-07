@@ -31,6 +31,7 @@ tags: [索引]
 | [KV Cache 压缩趋势](ai-ml/transformer/kv-cache-trend.md) | MLA 之后：非对称量化、Token 剪枝、RoPE 适配 |
 | [Speculative Decoding](ai-ml/transformer/speculative-decoding.md) | 推测解码，小模型草稿 + 大模型验证，推理加速 |
 | [Draft/Retrieve](ai-ml/transformer/draft-retrieve.md) | 缓存检索 + 草稿生成混合策略，前缀复用 |
+| [Prefill & Decode](ai-ml/transformer/prefill-decode.md) | Prefill/Decode 阶段详解，KV Cache 读写模式，Compute vs Memory bound |
 
 阅读顺序：感知机 → FFN → Transformer & Attention → 残差连接 → 拓扑结构
 

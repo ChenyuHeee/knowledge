@@ -4,7 +4,7 @@ tags: [深度学习, KV Cache, GQA, MHA]
 ---
 # KV Head：Key-Value 注意力头
 
-> 相关笔记：[Transformer & Attention](transformer-attention.md) | [大模型拓扑结构](llm-topology.md) | [MLA](mla.md)
+> 相关笔记：[Transformer & Attention](transformer-attention.md) | [大模型拓扑结构](llm-topology.md) | [MLA](mla.md) | [Prefill & Decode](prefill-decode.md)
 
 ## 背景
 
