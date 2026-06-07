@@ -5,7 +5,7 @@ tags: [LLM推理, 实时交互, 流式处理, 多模态]
 
 # 全双工（Full Duplex）
 
-> 相关笔记：[Speculative Decoding](transformer/speculative-decoding.md) | [Time Chunk](diffusion/time-chunk.md)
+> 相关笔记：[Speculative Decoding](transformer/speculative-decoding.md) | [Time Chunk](diffusion/time-chunk.md) | [流式视频](diffusion/streaming-video.md)
 
 ## 通信层面：原始定义
 

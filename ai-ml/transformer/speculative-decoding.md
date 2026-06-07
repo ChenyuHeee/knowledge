@@ -7,7 +7,7 @@ tags: [LLM推理, 推测解码, 推理加速]
 
 # Speculative Decoding（推测解码）
 
-> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [KV Cache 压缩趋势](kv-cache-trend.md)
+> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [KV Cache 压缩趋势](kv-cache-trend.md) | [Draft/Retrieve](draft-retrieve.md) | [Time Chunk](../diffusion/time-chunk.md) | [全双工](../full-duplex.md)
 
 ## 动机
 

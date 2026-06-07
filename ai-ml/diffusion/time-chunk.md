@@ -5,7 +5,7 @@ tags: [扩散模型, 视频生成, Attention, 长序列]
 
 # Time Chunk（时间分块）
 
-> 相关笔记：[流式视频](streaming-video.md) | [高速运动视频 Attention](motion-video-attention.md) | [KV Cache 压缩趋势](../transformer/kv-cache-trend.md)
+> 相关笔记：[流式视频](streaming-video.md) | [高速运动视频 Attention](motion-video-attention.md) | [KV Cache 压缩趋势](../transformer/kv-cache-trend.md) | [Speculative Decoding](../transformer/speculative-decoding.md) | [全双工](../full-duplex.md)
 
 ## 问题
 

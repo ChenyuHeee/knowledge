@@ -5,7 +5,7 @@ tags: [深度学习, Softmax, Attention, 数学基础]
 
 # Softmax
 
-> 相关笔记：[Transformer & Attention](transformer-attention.md) | [高速运动视频 Attention](../diffusion/motion-video-attention.md)
+> 相关笔记：[Transformer & Attention](transformer-attention.md) | [高速运动视频 Attention](../diffusion/motion-video-attention.md) | [VLM](../vlm.md)
 
 ## 定义
 

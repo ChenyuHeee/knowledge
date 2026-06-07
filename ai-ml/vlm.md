@@ -5,7 +5,7 @@ tags: [LLM, 多模态, VLM, Transformer]
 
 # VLM（Vision-Language Model，视觉语言模型）
 
-> 相关笔记：[Transformer & Attention](transformer/transformer-attention.md) | [Softmax](transformer/softmax.md)
+> 相关笔记：[Transformer & Attention](transformer/transformer-attention.md) | [Softmax](transformer/softmax.md) | [KV Cache 压缩趋势](transformer/kv-cache-trend.md) | [高速运动视频 Attention](diffusion/motion-video-attention.md) | [感知机](transformer/perceptron.md)
 
 ## 是什么
 

@@ -81,3 +81,63 @@ tags: [索引]
 | 笔记 | 说明 |
 |------|------|
 | [Uvicorn](python/uvicorn.md) | ASGI 服务器，ASGI vs WSGI，生产部署 |
+
+---
+
+## 知识网络：跨簇的深层线索
+
+### 线索 1：Softmax 稀释
+
+同一问题出现在三个领域：
+
+```
+Attention 基础 → 高速运动视频 → VLM
+   Softmax        视觉 token 间       visual token 挤占
+   全局归一化      的注意力被稀释      文本的注意力预算
+```
+
+**关键笔记**：[Softmax](ai-ml/transformer/softmax.md) → [高速运动视频 Attention](ai-ml/diffusion/motion-video-attention.md) → [VLM](ai-ml/vlm.md) → [定位关键 Token](ai-ml/diffusion/key-token-detection.md)
+
+### 线索 2：长序列的 Attention 状态管理
+
+同一问题换三个名字：
+
+```
+LLM 推理:              视频生成:
+  KV Cache 压缩         流式视频
+  MLA / GQA             Time Chunk
+  Draft/Retrieve        锚点帧 + 记忆压缩
+  Speculative Decoding  分层 Attention
+```
+
+**关键笔记**：[KV Cache 压缩趋势](ai-ml/transformer/kv-cache-trend.md) → [流式视频](ai-ml/diffusion/streaming-video.md) → [Time Chunk](ai-ml/diffusion/time-chunk.md) → [Draft/Retrieve](ai-ml/transformer/draft-retrieve.md)
+
+### 线索 3：Chunk 级并行流水线
+
+三个领域的同一个模式——块内 Dense + 块间 Sparse：
+
+```
+Spec Decoding:     Token → Draft Chunk → 验证
+Time Chunk:        帧 → Temporal Chunk → 稀疏 Attention
+Full Duplex:       音频 → 200ms Chunk → 并行流水线
+```
+
+**关键笔记**：[Speculative Decoding](ai-ml/transformer/speculative-decoding.md) → [Time Chunk](ai-ml/diffusion/time-chunk.md) → [全双工](ai-ml/full-duplex.md)
+
+### 线索 4：从试错到训练
+
+```
+RL 概述 → MCTS + PRM → OPD → 自蒸馏 → RL 训练稳定性
+   ↓          ↓           ↓      ↓          ↓
+ Agent    推理搜索    知识蒸馏  SFT替代   KL/PPL监控
+```
+
+### 线索 5：从神经元到 VLM
+
+```
+感知机 → MLP → FFN → Attention → Transformer → LLM → VLM
+  ↑                                               ↑
+ 基础单元                                      全在复用
+```
+
+**关键笔记**：[感知机](ai-ml/transformer/perceptron.md) → [FFN](ai-ml/transformer/ffn.md) → [Transformer & Attention](ai-ml/transformer/transformer-attention.md) → [大模型拓扑](ai-ml/transformer/llm-topology.md) → [VLM](ai-ml/vlm.md)
