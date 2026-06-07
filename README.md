@@ -39,6 +39,12 @@ tags: [索引]
 | [自蒸馏 vs RL](ai-ml/rl/self-distillation-vs-rl.md) | 强化学习与自蒸馏的关系、区别、交替使用 |
 | [RL 训练稳定性](ai-ml/rl/rl-training-stability.md) | KL 监控、Reward Hacking、防崩检查清单与对策 |
 
+### 扩散模型与生成
+
+| 笔记 | 说明 |
+|------|------|
+| [高速运动视频 Attention](ai-ml/diffusion/motion-video-attention.md) | 高速运动下 Attention 失效分析，Softmax 稀释，多步去噪 + 强化 Attention |
+
 ### 向量检索
 
 | 笔记 | 说明 |
