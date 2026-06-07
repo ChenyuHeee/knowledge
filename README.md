@@ -13,6 +13,7 @@ tags: [索引]
 |------|------|
 | [MCP](ai-ml/mcp.md) | Model Context Protocol，LLM 连接外部工具的标准协议 |
 | [全双工](ai-ml/full-duplex.md) | 实时 AI 交互，流式 ASR/LLM/TTS，Barge-in、Turn-taking |
+| [VLM](ai-ml/vlm.md) | 视觉语言模型，ViT + LLM，Visual Token 与 Softmax 稀释 |
 
 ### Transformer 与深度学习
 
