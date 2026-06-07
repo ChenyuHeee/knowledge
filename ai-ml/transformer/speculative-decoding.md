@@ -3,11 +3,9 @@ date: 2026-06-07
 tags: [LLM推理, 推测解码, 推理加速]
 ---
 
-> 相关笔记：[Draft/Retrieve](draft-retrieve.md)
+> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [KV Cache 压缩趋势](kv-cache-trend.md) | [Draft/Retrieve](draft-retrieve.md) | [Time Chunk](../diffusion/time-chunk.md) | [全双工](../full-duplex.md)
 
 # Speculative Decoding（推测解码）
-
-> 相关笔记：[KV Head](kv-head.md) | [MLA](mla.md) | [KV Cache 压缩趋势](kv-cache-trend.md) | [Draft/Retrieve](draft-retrieve.md) | [Time Chunk](../diffusion/time-chunk.md) | [全双工](../full-duplex.md)
 
 ## 动机
 

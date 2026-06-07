@@ -3,11 +3,9 @@ date: 2026-06-07
 tags: [强化学习, 自蒸馏, RLHF, 知识蒸馏]
 ---
 
-> 相关笔记：[RL 概述](rl-intro.md) | [RL 训练稳定性](rl-training-stability.md)
+> 相关笔记：[RL 概述](rl-intro.md) | [OPD](opd.md) | [MCTS + PRM](mcts-prm.md) | [RL 训练稳定性](rl-training-stability.md)
 
 # 强化学习与自蒸馏的关系
-
-> 相关笔记：[RL 概述](rl-intro.md) | [OPD](opd.md) | [MCTS + PRM](mcts-prm.md)
 
 ## 光谱
 
