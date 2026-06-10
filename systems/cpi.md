@@ -3,6 +3,8 @@ date: 2026-06-10
 tags: [计算机体系结构, CPU, 性能, CPI, IPC]
 ---
 
+> 相关笔记：[寄存器](register.md)
+
 # CPI（Cycles Per Instruction，每条指令时钟周期数）
 
 ## CPU 性能公式

@@ -78,6 +78,7 @@ tags: [索引]
 | [cgroup 限制内存](linux/cgroup-memory-limit.md) | cgroup v2 memory.max，限制进程内存使用 |
 | [NUMA & numactl](linux/numa-movepages-numactl.md) | NUMA 拓扑，move_pages，numactl 绑核绑内存 |
 | [CPI](systems/cpi.md) | 每条指令时钟周期数，IPC，Hazard，与 LLM 推断的类比 |
+| [寄存器](systems/register.md) | 存储金字塔顶层，RISC Load-Store，Register File |
 
 ## Python / Web
 
