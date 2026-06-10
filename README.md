@@ -71,12 +71,13 @@ tags: [索引]
 | [BVH](algorithms/bvh.md) | 层次包围盒，光线追踪空间加速结构，O(log N) 剪枝 |
 | [霍夫曼编码](algorithms/huffman.md) | 贪心最优前缀码，高频短码低频长码，与 BPE 的关系 |
 
-## Linux / 系统
+## 系统 / 体系结构
 
 | 笔记 | 说明 |
 |------|------|
 | [cgroup 限制内存](linux/cgroup-memory-limit.md) | cgroup v2 memory.max，限制进程内存使用 |
 | [NUMA & numactl](linux/numa-movepages-numactl.md) | NUMA 拓扑，move_pages，numactl 绑核绑内存 |
+| [CPI](systems/cpi.md) | 每条指令时钟周期数，IPC，Hazard，与 LLM 推断的类比 |
 
 ## Python / Web
 
