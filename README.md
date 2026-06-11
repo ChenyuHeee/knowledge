@@ -80,7 +80,13 @@ tags: [索引]
 | [CPI](systems/cpi.md) | 每条指令时钟周期数，IPC，Hazard，与 LLM 推断的类比 |
 | [寄存器](systems/register.md) | 存储金字塔顶层，RISC Load-Store，Register File |
 
-## Python / Web
+## Web / 前端
+
+| 笔记 | 说明 |
+|------|------|
+| [DOM 与 API](web/dom-api.md) | 文档对象模型，API 概念，DOM API 的关系 |
+
+## Python
 
 | 笔记 | 说明 |
 |------|------|
