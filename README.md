@@ -94,6 +94,7 @@ tags: [索引]
 | 笔记 | 说明 |
 |------|------|
 | [DOM 与 API](web/dom-api.md) | 文档对象模型，API 概念，DOM API 的关系 |
+| [JSON 与 JSONL](web/json-jsonl.md) | JSON 树状数据格式，JSONL 一行一对象，LLM 训练数据格式 |
 
 ## Python
 
