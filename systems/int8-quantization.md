@@ -1,6 +1,6 @@
 ---
 date: 2026-06-14
-tags: [计算机体系结构, GPU, 量化, INT8, FP8, FP16, BF16, 推理优化]
+tags: [计算机体系结构, GPU, 量化, INT8, FP8, FP16, BF16, MXFP4, 推理优化]
 ---
 
 # INT8 量化
@@ -83,10 +83,29 @@ FP8:  [val × 2^exp, ...]  ← 每个值自带指数，不需要找全局 min/ma
 
 这绕过了 INT8 激活量化的最大痛点。H100 Tensor Core 原生支持 FP8，GEMM 吞吐是 BF16 的 2 倍。DeepSeek-V3 已用 FP8 训练。
 
+## MXFP4
+
+微软/AMD/Intel/ARM 联盟推的 4 位微缩放浮点。一组值共享一个指数：
+
+```
+INT8:  整个矩阵一个 scale → 极端值拖累全局
+FP8:   每值自带指数 → 开销大但精准
+MXFP4: 每 32 个值共享 8 位指数，每个值只存 3 位尾数
+```
+
+| | INT8 | FP8 | MXFP4 |
+|------|------|------|------|
+| 位宽 | 8 | 8 | **4** |
+| 指数 | 全局 scale | 每值 | **一组共享** |
+| 推手 | 通用 | NVIDIA | 微软/AMD/Intel/ARM |
+
+非 NVIDIA 阵营推的开放标准（MXFP8/MXFP6/MXFP4/MXINT8），目标是让 AMD/Intel 芯片有统一的低精度生态。
+
 ### 精度链
 
 ```
-FP32 → BF16/FP16 → FP8 → INT8 → INT4
+FP32 → BF16/FP16 → FP8 → MXFP8/MXFP6 → INT8 → MXFP4/INT4
+                  NVIDIA                       非 NVIDIA 联盟
 ```
 
 ## 与前文连接
