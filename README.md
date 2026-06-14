@@ -88,6 +88,7 @@ tags: [索引]
 | [CPI](systems/cpi.md) | 每条指令时钟周期数，IPC，Hazard，与 LLM 推断的类比 |
 | [寄存器](systems/register.md) | 存储金字塔顶层，RISC Load-Store，Register File |
 | [GEMM](systems/gemm.md) | 通用矩阵乘，Tiling 优化，im2col 卷积转矩阵乘 |
+| [RDMA](systems/rdma.md) | 远程直接内存访问，零拷贝网络，分布式训练集群 |
 
 ## Web / 前端
 
