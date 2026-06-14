@@ -1,11 +1,11 @@
 ---
 date: 2026-06-14
-tags: [计算机体系结构, 网络, RDMA, 分布式训练]
+tags: [计算机体系结构, 网络, RDMA, InfiniBand, 分布式训练]
 ---
 
 # RDMA（Remote Direct Memory Access，远程直接内存访问）
 
-> 相关笔记：[GEMM](gemm.md) | [CPI](cpi.md)
+> 相关笔记：[GEMM](gemm.md) | [NVLink](nvlink.md)
 
 ## 是什么
 
@@ -41,3 +41,31 @@ TCP 的 200μs 延迟累积成瓶颈。RDMA 把同步压到 2μs，几乎不耽�
 | InfiniBand | 原生 RDMA，性能最强，NVIDIA/Mellanox |
 | RoCE v2 | RDMA over Converged Ethernet |
 | iWARP | RDMA over TCP/IP，最兼容 |
+
+## InfiniBand（IB）
+
+RDMA 的原生载体。NVIDIA 通过收购 Mellanox 将其绑入全栈生态。
+
+### 在互连栈的位置
+
+```
+机内 GPU 间:  NVLink + NVSwitch (1.8 TB/s)
+跨机 GPU 间:  InfiniBand (400 GB/s, RDMA)
+机架间:       InfiniBand / 以太网
+```
+
+### 与以太网的区别
+
+| | 以太网 | InfiniBand |
+|------|--------|----|
+| RDMA | 需 RoCE 扩展 | **原生支持** |
+| 延迟 | 几十 μs | **< 2 μs** |
+| 带宽 | 100G/200G/400G | 400G/800G |
+| 拥塞控制 | 丢包重传 | **信用机制**（无损） |
+| 生态 | 开放多厂商 | NVIDIA/Mellanox 垄断 |
+
+快的原因：**硬件信用流控**——发送前先获取接收方缓存额度，保证绝不丢包；**端到端 RDMA 卸载**——网卡硬件完成全部传输。
+
+### 为什么 GPU 集群用它
+
+以太网丢包 → 200μs 操作变 50ms → 训练吞吐波动剧烈。InfiniBand 通信延迟稳定在 2μs 以内，不分「好时候」「坏时候」。
