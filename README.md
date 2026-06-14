@@ -53,6 +53,7 @@ tags: [索引]
 | [定位关键 Token](ai-ml/diffusion/key-token-detection.md) | 四种定位方法：光流、Attention 熵、Token Loss、跨帧匹配 |
 | [流式视频](ai-ml/diffusion/streaming-video.md) | 流式视频生成，长程 Attention 衰减，与 KV Cache 的同一性 |
 | [Time Chunk](ai-ml/diffusion/time-chunk.md) | 时间分块 Attention，块内 Dense + 块间 Sparse |
+| [REPA & RAE](ai-ml/diffusion/repa-rae.md) | 表示对齐与正则化自编码器，扩散训练加速 |
 
 ### 向量检索
 
