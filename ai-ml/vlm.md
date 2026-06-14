@@ -1,6 +1,6 @@
 ---
 date: 2026-06-07
-tags: [LLM, 多模态, VLM, Transformer]
+tags: [LLM, 多模态, VLM, Omni, Transformer]
 ---
 
 # VLM（Vision-Language Model，视觉语言模型）
@@ -60,9 +60,28 @@ Softmax 预算: 91% 被 visual tokens 分走
 | KV Cache 共享 | Visual token 不变，KV 一次算完缓存 |
 | Vision Encoder 加速 | ViT 量化/剪枝 |
 
+## Omni 模型：VLM 的下一步
+
+GPT-4o 的「o」= Omni。一个模型原生处理文本、图像、音频、视频的**输入和输出**。
+
+VLM 只能看图 → 输出文本。Omni 多模态出：
+
+```
+文本入 → Text Tokenizer
+音频入 → Audio Tokenizer       → 统一 Transformer
+图片入 → Vision Encoder              ↓
+        → Text / Audio / Image Decoder ← 多模态出
+```
+
+Transformer 对全部模态一视同仁，输出时决定该出什么模态的 token。4o 能笑能变语速，因为音频 token 是模型自己产生的，不是 TTS 后加的。
+
+Omni + 全双工（前面聊过的）= 实时语音助手，边听边说，支持打断。
+
 ## 知识链
 
 ```
-Transformer → LLM → VLM
-Attention/QKV/Softmax/KV Cache → 全部复用
+Transformer → LLM → VLM → Omni
+   ↑                        ↑
+  基础              全在复用原来的 Transformer 架构
 ```
+
