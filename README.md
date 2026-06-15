@@ -86,6 +86,7 @@ tags: [索引]
 |------|------|
 | [cgroup 限制内存](linux/cgroup-memory-limit.md) | cgroup v2 memory.max，限制进程内存使用 |
 | [NUMA & numactl](linux/numa-movepages-numactl.md) | NUMA 拓扑，move_pages，numactl 绑核绑内存 |
+| [内核头文件](linux/kernel-headers.md) | Kernel Headers，GPU 驱动编译内核模块所需 |
 | [CPI](systems/cpi.md) | 每条指令时钟周期数，IPC，Hazard，与 LLM 推断的类比 |
 | [寄存器](systems/register.md) | 存储金字塔顶层，RISC Load-Store，Register File |
 | [GEMM](systems/gemm.md) | 通用矩阵乘，Tiling 优化，im2col 卷积转矩阵乘 |
