@@ -98,6 +98,7 @@ tags: [索引]
 | [INT8 量化](systems/int8-quantization.md) | 8 位整数量化，权重/KV Cache 压缩，Decode 加速，FP8/FP16/BF16/MXFP4 |
 | [Blackwell](systems/blackwell.md) | NVIDIA 最新 GPU 架构，B200/GB200，192GB，FP4，NVLink 5 |
 | [SIMD / SIMT](systems/simd-simt.md) | CPU 向量指令 vs GPU 线程模型，Warp Divergence |
+| [VLIW](systems/vliw.md) | 超长指令字，编译器找并行，DSP/AI 加速器 |
 
 ## Web / 前端
 
