@@ -15,6 +15,7 @@ tags: [索引]
 | [全双工](ai-ml/full-duplex.md) | 实时 AI 交互，流式 ASR/LLM/TTS，Barge-in、Turn-taking |
 | [VLM](ai-ml/vlm.md) | 视觉语言模型，ViT + LLM，Visual Token 与 Softmax 稀释 |
 | [Agent Token 压缩](ai-ml/agent-token-compression.md) | Agent 上下文压缩，摘要/滑动窗口/Token剪枝/长短期记忆 |
+| [On-device Training](ai-ml/on-device-training.md) | 端侧训练，LoRA 微调，量化压低内存 |
 
 ### Transformer 与深度学习
 
