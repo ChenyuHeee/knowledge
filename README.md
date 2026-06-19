@@ -95,7 +95,8 @@ tags: [索引]
 | [GEMM](systems/gemm.md) | 通用矩阵乘，Tiling 优化，im2col 卷积转矩阵乘 |
 | [RDMA](systems/rdma.md) | 远程直接内存访问，零拷贝网络，分布式训练集群 |
 | [NVLink](systems/nvlink.md) | GPU 间高速互连，NVSwitch，PCIe，多级互连全景 |
-| [INT8 量化](systems/int8-quantization.md) | 8 位整数量化，权重/KV Cache 压缩，Decode 加速 |
+| [INT8 量化](systems/int8-quantization.md) | 8 位整数量化，权重/KV Cache 压缩，Decode 加速，FP8/FP16/BF16/MXFP4 |
+| [Blackwell](systems/blackwell.md) | NVIDIA 最新 GPU 架构，B200/GB200，192GB，FP4，NVLink 5 |
 
 ## Web / 前端
 
