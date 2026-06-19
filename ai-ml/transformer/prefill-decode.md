@@ -121,3 +121,22 @@ Decode GPU (高带宽):   接收 KV Cache → 逐 token 生成 → 高吞吐
 ```
 
 两个阶段物理分离，按需分别扩容。
+
+### 短序列直通 CUDA Kernel
+
+短序列（< 512）不值得 Flash Attention 的 Tiling 开销。分块调度、SRAM 管理、分块 softmax rescaling 的固定开销 > 实际计算量。做法：两条路径按 seq_len 动态路由。
+
+```
+Prefill 请求 → seq_len < 阈值（如 512）?
+  → 短路径: 精简 CUDA GEMM kernel，不做 Tiling，一次 kernel launch
+  → 长路径: 标准 Flash Attention，分块 Tiling + SRAM 复用
+```
+
+| | Flash Attention | 短路径 CUDA Kernel |
+|------|------|------|
+| Kernel launch | 多次 | **1 次** |
+| SRAM 管理 | 复杂 | 不需要 |
+| 适合 | > 512 | **< 512** |
+| 延迟 | 基准 | 快 30~50% |
+
+本质：短序列 Overhead-bound，用最精简路径榨取极限延迟。长序列 Compute-bound，用 Tiling 最大化吞吐。同一哲学——没有一种策略对全部场景最优，按特征动态路由。
