@@ -44,3 +44,26 @@ NVL72  = 72×B200 装一个机柜，NVSwitch 全互联
 ```
 
 万卡 Blackwell 集群 = 这个全栈的矩阵化。
+
+## NVFP4
+
+NVIDIA 私有的 4 位浮点，Blackwell 独占。
+
+### 精度链
+
+```
+FP8 (E4M3/E5M2, H100) → NVFP4 (Blackwell) → MXFP4 (AMD 联盟)
+```
+
+### NVFP4 vs MXFP4
+
+| | NVFP4 | MXFP4 |
+|------|------|------|
+| 推手 | NVIDIA | 微软/AMD/Intel/ARM |
+| 硬件 | **Blackwell 专有** | 多厂商开放 |
+| 位宽 | 4 bit | 4 bit |
+| 指数 | 微缩放（一组共享） | 微缩放（一组共享） |
+| 算力 | **9 PFLOPS** | 取决于实现 |
+| 生态 | CUDA 闭源 | 各厂商自写 |
+
+思路相同——4 位浮点 + 共享指数。INT4 的全局 scale 在 4bit 下更严重，NVFP4 靠微缩放在极限上保精度。9 PFLOPS = H100 FP8 的 2× = H100 FP16 的近 5×。
